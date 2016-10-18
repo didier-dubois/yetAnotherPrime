@@ -37,7 +37,7 @@ def dumpPrimes(start, end):
     fh.close()
 
 
-#v=int(1e8)
-v=1000
-dumpPrimes(1,v)
-print "Dumped primes up to %d in %0.3f s" % (v, time.time() -t0 )
+if __name__ == "__main__":    
+    v=1000
+    dumpPrimes(1,v)
+    print "Dumped primes up to %d in %0.3f s" % (v, time.time() -t0 )
